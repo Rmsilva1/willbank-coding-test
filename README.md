@@ -6,11 +6,6 @@ API responsible for resending a pix transaction
 
 - Local: http://localhost:8080/api
 
-## Documentation
-
-Open API docs
-
-- Local: http://localhost:8080/api/swagger-ui.html
 
 ## Setup Using Docker
 
@@ -25,8 +20,14 @@ Step 1: Clone the repo
 git clone https://github.com/Rmsilva1/willbank-coding-test.git
 ```
 
-Step 2: Run docker compose for setting up wiremock: docker-compose up
+Step 2: Run docker compose for setting up wiremock:
 
-Exposed endpoint: **/v1/pix-resend/{user-email}*
+```
+docker-compose up
+```
 
-Supported method: **POST**
+Step 3: Call endpoint with supported method: **POST**
+
+```
+Exposed endpoint: http://localhost:8080/api/v1/pix-resend/{userEmail}
+```

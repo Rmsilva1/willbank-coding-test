@@ -7,7 +7,3 @@ services:
       - "8443:8443"
     volumes:
       - ${PWD}/mock:/home/wiremock
-  app:
-    image: willbank-coding-test
-    ports:
-      - "8080:8080"
