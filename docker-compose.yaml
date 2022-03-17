@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mock:
+    image: rodolpheche/wiremock:2.26.3-alpine
+    ports:
+      - "5000:8080"
+      - "8443:8443"
+    volumes:
+      - ${PWD}/mock:/home/wiremock

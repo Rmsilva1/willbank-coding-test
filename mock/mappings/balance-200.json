@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/balance/api/v1/7961/52850-6"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "balance": 5000
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

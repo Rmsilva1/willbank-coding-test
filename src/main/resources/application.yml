@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+pending-transactions-api:
+  host: http://localhost:5000
+balance-api:
+  host: http://localhost:5000
+bank-clients-api:
+  host: http://localhost:5000
