@@ -7,8 +7,28 @@ public class PixTransactionResponse {
     private String customerID;
     private String key;
     private BigDecimal value;
+    private Boolean success;
+    private String reason;
 
     public PixTransactionResponse() {
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public PixTransactionResponse setReason(String reason) {
+        this.reason = reason;
+        return this;
+    }
+
+    public Boolean getSuccess() {
+        return success;
+    }
+
+    public PixTransactionResponse setSuccess(Boolean success) {
+        this.success = success;
+        return this;
     }
 
     public String getCustomerID() {

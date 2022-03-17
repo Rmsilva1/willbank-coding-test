@@ -25,4 +25,8 @@ Step 1: Clone the repo
 git clone https://github.com/Rmsilva1/willbank-coding-test.git
 ```
 
-Step 2: Run docker compose: docker-compose up
+Step 2: Run docker compose for setting up wiremock: docker-compose up
+
+Exposed endpoint: **/v1/pix-resend/{user-email}*
+
+Supported method: **POST**

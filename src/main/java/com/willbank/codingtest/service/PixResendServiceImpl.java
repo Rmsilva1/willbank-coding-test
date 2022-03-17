@@ -2,7 +2,6 @@ package com.willbank.codingtest.service;
 
 import com.willbank.codingtest.model.PendingTransaction;
 import com.willbank.codingtest.model.PixTransactionResponse;
-import com.willbank.codingtest.model.exception.ApiException;
 import com.willbank.codingtest.model.exception.NotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,7 +55,7 @@ public class PixResendServiceImpl implements PixResendService {
 
         if (Objects.isNull(balanceResponse)) {
             LOGGER.error("stage=error method=PixResendServiceImpl.performPixTransaction failed to check customer balance");
-            throw new ApiException("failed to check customer balance");
+            return new PixTransactionResponse().setSuccess(Boolean.FALSE).setReason("failed to check customer balance");
         }
 
         if (balanceResponse.getBalance().compareTo(pendingTransaction.getValue()) >= 0) {
@@ -68,6 +67,6 @@ public class PixResendServiceImpl implements PixResendService {
         }
 
         LOGGER.error("stage=error method=PixResendServiceImpl.verifyCustomerBalance pix transaction failed, insufficient balance pendingTransaction={}", pendingTransaction);
-        throw new ApiException("insufficient balance");
+        return new PixTransactionResponse().setSuccess(Boolean.FALSE).setReason("insufficient balance");
     }
 }
