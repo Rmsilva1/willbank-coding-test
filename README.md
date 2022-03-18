@@ -1,8 +1,8 @@
 # willbank-coding-test
 
-API responsible for resending a pix transaction
+API responsible for resending an pix transaction.
 
-*It  is necessary to run the from this repo  with docker compose in order for the application to work properly
+It is necessary to run the mocks from this repo with *docker compose* in order for the application to work properly
   
 ``` 
 docker compose up
