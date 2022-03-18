@@ -13,7 +13,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -48,8 +47,17 @@ public class PixResendControllerTest {
     public void pix_resend_failure_insufficient_balance_should_throw_api_error() throws Exception {
         String userEmail = "aaronhand@ratke.name";
 
-        mvc.perform(post("/v1/pix-resend/" + userEmail).contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-                .andExpect(content().string(containsString("insufficient balance")));
+        mvc.perform(post("/v1/pix-resend/" + userEmail)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().is5xxServerError());
+    }
+
+    @Test
+    public void pix_resend_failure_customer_wallet_not_found_throw_api_error() throws Exception {
+        String userEmail = "inexisting-wallet@email.com";
+
+        mvc.perform(post("/v1/pix-resend/" + userEmail)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound());
     }
 }

@@ -9,6 +9,5 @@ import java.util.List;
 @Service
 public interface BankClientsService {
     Customer findCustomerAccount(String customerID);
-
     List<BankCustomersResponse> findAllBankCustomers();
 }

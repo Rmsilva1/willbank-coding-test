@@ -26,7 +26,7 @@ public class BankCustomersServiceImpl implements BankClientsService {
     }
 
     public Customer findCustomerAccount(String customerID) {
-        LOGGER.info("stage=init method=BankClientServiceImpl.findAllBankClients");
+        LOGGER.info("stage=init method=BankClientServiceImpl.findCustomerAccount customerID={}", customerID);
 
         var bankCustomers = findAllBankCustomers();
 
@@ -42,7 +42,6 @@ public class BankCustomersServiceImpl implements BankClientsService {
                         null,
                         new ParameterizedTypeReference<>() {
                         });
-
         if (bankCustomersResponse.hasBody()) {
             return bankCustomersResponse.getBody();
         }
@@ -52,14 +51,12 @@ public class BankCustomersServiceImpl implements BankClientsService {
     private BankCustomersResponse filterWillBank(List<BankCustomersResponse> bankCustomersResponseList) {
         var willBankCustomerResponse = bankCustomersResponseList.stream()
                 .filter(bankClientResponse -> bankClientResponse.getBank().equals(WILL_BANK_NAME)).findFirst();
-
         return willBankCustomerResponse.orElse(null);
     }
 
     private Customer filterCustomerAccount(BankCustomersResponse bankCustomersResponse, String customerID) {
         var customerAccount = bankCustomersResponse.getCustomers().stream()
                 .filter(customer -> customer.getCustomerID().equals(customerID)).findFirst();
-
         return customerAccount.orElse(null);
     }
 }
