@@ -2,6 +2,13 @@
 
 API responsible for resending a pix transaction
 
+*It  is necessary to run the from this repo  with docker compose in order for the application to work properly
+  
+``` 
+docker compose up
+
+```
+
 ## Hosts
 
 - Local: http://localhost:8080/api
