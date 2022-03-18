@@ -1,0 +1,564 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/banks-customers/api/v1"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "bank": "Will Bank",
+        "customers": [
+          {
+            "customerID": "b1a0827c-2532-470c-954c-d93ed88590d7",
+            "agency": "5036",
+            "account": "98934-2"
+          },
+          {
+            "customerID": "4972f2a7-77cf-4cb6-a76f-c730b683ec98",
+            "agency": "0154",
+            "account": "58724-0"
+          },
+          {
+            "customerID": "c3d4abd2-c301-45c9-950a-b023464e035c",
+            "agency": "3670",
+            "account": "06495-1"
+          },
+          {
+            "customerID": "7d87aa3f-99a9-492e-9e09-8a83b2e7305d",
+            "agency": "2953",
+            "account": "40361-0"
+          },
+          {
+            "customerID": "f8358dc6-8c89-4df1-9d2e-120a137aadd5",
+            "agency": "2965",
+            "account": "54967-5"
+          },
+          {
+            "customerID": "c018acc8-abcc-4d51-9eee-085172a06f35",
+            "agency": "3941",
+            "account": "04345-4"
+          },
+          {
+            "customerID": "cb312036-718c-4e62-a17b-325b165597f0",
+            "agency": "8403",
+            "account": "67130-3"
+          },
+          {
+            "customerID": "7cd38532-b990-48c0-b385-8cd51095a32f",
+            "agency": "2356",
+            "account": "57515-8"
+          },
+          {
+            "customerID": "c870f824-ce9b-44e2-a7eb-400af6765956",
+            "agency": "7321",
+            "account": "00441-4"
+          },
+          {
+            "customerID": "69775a86-8643-436f-9f8d-d9b54d93de61",
+            "agency": "9647",
+            "account": "29694-3"
+          },
+          {
+            "customerID": "cc869e37-255f-4b16-adab-54c7a67b2b59",
+            "agency": "0879",
+            "account": "72511-3"
+          },
+          {
+            "customerID": "e834fa17-0044-4153-b4d6-3c810af9617a",
+            "agency": "7600",
+            "account": "35184-2"
+          },
+          {
+            "customerID": "4844dde6-3069-4942-9e6f-df1e609c7494",
+            "agency": "4618",
+            "account": "11669-3"
+          },
+          {
+            "customerID": "1317f9a6-78b7-4c70-9be7-bb36081d9811",
+            "agency": "6183",
+            "account": "03114-0"
+          },
+          {
+            "customerID": "2fd58201-70c3-4886-9073-d6add3dbbaad",
+            "agency": "3770",
+            "account": "14251-7"
+          },
+          {
+            "customerID": "07bfe3c5-132a-4892-824e-a0ed817481c2",
+            "agency": "1181",
+            "account": "77064-4"
+          },
+          {
+            "customerID": "9aaf23c4-4ecd-4a11-ba5a-d790cb2734f5",
+            "agency": "6331",
+            "account": "22977-5"
+          },
+          {
+            "customerID": "0e59bacb-0ef8-441b-b254-875ac8a408af",
+            "agency": "6399",
+            "account": "65553-0"
+          },
+          {
+            "customerID": "76ac0f00-248a-4656-9428-ac36495c1b69",
+            "agency": "1132",
+            "account": "45527-4"
+          },
+          {
+            "customerID": "6be24724-b18a-4ce5-ba91-67cfec0ac6f6",
+            "agency": "2374",
+            "account": "81316-9"
+          },
+          {
+            "customerID": "f08607fc-8d62-426d-90e1-f2b79f531cd0",
+            "agency": "6832",
+            "account": "66727-8"
+          },
+          {
+            "customerID": "4b5694aa-588f-447b-a530-b8d022a79e87",
+            "agency": "8673",
+            "account": "13843-5"
+          },
+          {
+            "customerID": "0bb3b155-8e89-4efb-9478-7863e65b40bc",
+            "agency": "2639",
+            "account": "37896-5"
+          },
+          {
+            "customerID": "482e6bcb-80c9-433d-9a33-4ab1dbc22d79",
+            "agency": "3652",
+            "account": "65405-2"
+          },
+          {
+            "customerID": "d9b307fd-3e3c-4924-a1ff-ac7eb334cd3c",
+            "agency": "5474",
+            "account": "19168-4"
+          },
+          {
+            "customerID": "eea34692-4156-4d7a-b552-b466bd33cab8",
+            "agency": "6890",
+            "account": "00839-0"
+          },
+          {
+            "customerID": "f75b9469-d1f5-4666-a138-a8d52c2f86bf",
+            "agency": "2509",
+            "account": "20533-7"
+          },
+          {
+            "customerID": "5381660d-b19f-41e4-9647-a25b96694cc3",
+            "agency": "8141",
+            "account": "93048-9"
+          },
+          {
+            "customerID": "23cce726-87f1-4152-8b7e-59e387068d97",
+            "agency": "3793",
+            "account": "80121-8"
+          },
+          {
+            "customerID": "4bcb2d87-f1e7-46e9-b080-601dd76fd661",
+            "agency": "7082",
+            "account": "43341-7"
+          },
+          {
+            "customerID": "da6eaaff-c427-4f5d-9543-95d2250bbcea",
+            "agency": "1620",
+            "account": "49645-1"
+          },
+          {
+            "customerID": "f836df42-fa06-41ca-b3cc-1d9ce94d0179",
+            "agency": "3064",
+            "account": "75156-3"
+          },
+          {
+            "customerID": "1e928d26-3234-4c7a-aee0-47eb0d4831cd",
+            "agency": "8176",
+            "account": "10202-4"
+          },
+          {
+            "customerID": "84ba68fa-fdf2-45a3-bd2d-96ae7cd41129",
+            "agency": "4235",
+            "account": "75227-0"
+          },
+          {
+            "customerID": "8b925b0c-4e34-4d33-b601-9f6c94b4e5f7",
+            "agency": "4871",
+            "account": "00333-0"
+          },
+          {
+            "customerID": "30915dd5-4f3f-4339-882b-19cf91ca48da",
+            "agency": "7768",
+            "account": "75521-5"
+          },
+          {
+            "customerID": "829d2269-7e8a-49e2-a252-5ba4e5db3a33",
+            "agency": "8931",
+            "account": "91327-5"
+          },
+          {
+            "customerID": "598b342f-994b-436f-b2e6-eec1f679a7d9",
+            "agency": "8457",
+            "account": "16228-5"
+          },
+          {
+            "customerID": "bd97d206-311b-4bd6-a5c3-cad2e354f665",
+            "agency": "4664",
+            "account": "40676-0"
+          },
+          {
+            "customerID": "53ac1549-919a-41dd-80cd-4036d288ffd5",
+            "agency": "8882",
+            "account": "52562-7"
+          },
+          {
+            "customerID": "e74cf54b-9f1f-4ca1-962f-a426162bcbc4",
+            "agency": "8220",
+            "account": "59312-8"
+          },
+          {
+            "customerID": "7a57e3fb-1923-46f4-aa2b-5ecd1a76ab12",
+            "agency": "9881",
+            "account": "72085-4"
+          },
+          {
+            "customerID": "b363ee70-1c3b-4237-8776-f44330e9f4dd",
+            "agency": "4772",
+            "account": "45480-7"
+          },
+          {
+            "customerID": "ddaf8c64-cf45-4474-a081-b7a58f355a6d",
+            "agency": "2346",
+            "account": "61859-0"
+          },
+          {
+            "customerID": "6b229ef3-e1fe-41e2-8c8c-fbb9e731a6f6",
+            "agency": "2077",
+            "account": "54459-7"
+          },
+          {
+            "customerID": "6db3cb1b-b91e-4a4f-8a13-a1a423cf7991",
+            "agency": "7961",
+            "account": "52850-6"
+          },
+          {
+            "customerID": "406799cd-85fc-4905-bb36-43174067a9b3",
+            "agency": "9886",
+            "account": "22816-8"
+          },
+          {
+            "customerID": "733a36e7-56dd-4cd9-b465-9cc3351e10be",
+            "agency": "2323",
+            "account": "17437-9"
+          },
+          {
+            "customerID": "7cef7e30-95ad-4609-ac29-19b315205443",
+            "agency": "1921",
+            "account": "24248-2"
+          },
+          {
+            "customerID": "94b8d21a-f0c3-4a59-8e12-41cf84a73a04",
+            "agency": "0229",
+            "account": "39082-8"
+          },
+          {
+            "customerID": "eaafc185-63dd-49be-a71f-b9805bf6cf5e",
+            "agency": "2725",
+            "account": "02502-1"
+          },
+          {
+            "customerID": "2a7a591e-f8f5-45e6-820c-6c02b4705bab",
+            "agency": "5649",
+            "account": "16645-2"
+          },
+          {
+            "customerID": "39a506c7-8073-49ec-aae2-4f69ff7d3af2",
+            "agency": "0595",
+            "account": "11780-8"
+          },
+          {
+            "customerID": "b5891d97-26ce-40ef-8b72-a4028b12fe34",
+            "agency": "4492",
+            "account": "70647-1"
+          },
+          {
+            "customerID": "556de180-89e9-4c70-b644-41bdae2b71fa",
+            "agency": "4779",
+            "account": "57053-9"
+          },
+          {
+            "customerID": "11ca8bd2-fa81-4ab4-9cef-2c3607b3140a",
+            "agency": "0950",
+            "account": "96116-6"
+          },
+          {
+            "customerID": "cb257702-eae3-47f5-a262-f75d90465696",
+            "agency": "9605",
+            "account": "70570-7"
+          },
+          {
+            "customerID": "20a89ce6-7929-4462-8be5-ce6caeae42d6",
+            "agency": "1032",
+            "account": "87271-2"
+          },
+          {
+            "customerID": "0b17b27c-dac4-4378-9981-d5985c0729bd",
+            "agency": "6565",
+            "account": "43276-8"
+          },
+          {
+            "customerID": "7aa59a5c-8aed-499f-9a89-a58be4a0e135",
+            "agency": "2530",
+            "account": "11832-5"
+          },
+          {
+            "customerID": "be5cf23b-0287-47b9-b3e7-98b6867b71bc",
+            "agency": "6717",
+            "account": "31955-1"
+          },
+          {
+            "customerID": "2035fcc1-4621-4d19-8fa5-33001ba73eab",
+            "agency": "2795",
+            "account": "30047-8"
+          },
+          {
+            "customerID": "e41c3bd2-e383-423f-be1e-8a5a767250b4",
+            "agency": "0440",
+            "account": "48487-6"
+          },
+          {
+            "customerID": "82d78a86-3dbd-4061-8851-93255d474933",
+            "agency": "0005",
+            "account": "13298-4"
+          },
+          {
+            "customerID": "c11faa1d-7717-4770-9cee-347a3c557c68",
+            "agency": "2254",
+            "account": "00147-9"
+          },
+          {
+            "customerID": "96376dde-cceb-4369-bf62-b82c72958c69",
+            "agency": "5846",
+            "account": "50908-3"
+          },
+          {
+            "customerID": "a64a08c2-9603-4bc8-8df1-80f59a453a78",
+            "agency": "4238",
+            "account": "61526-1"
+          },
+          {
+            "customerID": "8fbb7d78-6927-428d-a546-a2b11ea48c39",
+            "agency": "7883",
+            "account": "23232-2"
+          },
+          {
+            "customerID": "392d718b-332b-49ee-bc3f-d41828a6de73",
+            "agency": "7526",
+            "account": "96516-4"
+          },
+          {
+            "customerID": "52f53656-e89f-4f2e-b44e-bb2f8e631777",
+            "agency": "1602",
+            "account": "05293-7"
+          },
+          {
+            "customerID": "fd69d814-e458-4807-98ce-17cb282789f7",
+            "agency": "2407",
+            "account": "32114-2"
+          },
+          {
+            "customerID": "1e1621fd-fda9-43e5-8d63-2bdf11211207",
+            "agency": "0691",
+            "account": "40528-4"
+          },
+          {
+            "customerID": "40f7028e-e3d5-489f-b7a0-759747c572a0",
+            "agency": "3693",
+            "account": "97392-6"
+          },
+          {
+            "customerID": "8cdc9801-d973-4258-90f0-26248a6cd520",
+            "agency": "9606",
+            "account": "08682-6"
+          },
+          {
+            "customerID": "9ab5fdd7-1b9a-4c91-8fe4-f30ea142297d",
+            "agency": "9711",
+            "account": "64199-4"
+          },
+          {
+            "customerID": "27324353-6f27-4c91-bfd7-1e6955562cea",
+            "agency": "5755",
+            "account": "16398-6"
+          },
+          {
+            "customerID": "3c272f3b-0ec6-4623-952b-aa1f43798ac5",
+            "agency": "2141",
+            "account": "43391-8"
+          },
+          {
+            "customerID": "ed219528-80bb-47cb-94d0-50d68d9cd35c",
+            "agency": "3611",
+            "account": "92371-7"
+          },
+          {
+            "customerID": "47db2e08-1c9b-43f0-8d7b-75c245328f3a",
+            "agency": "0059",
+            "account": "54661-8"
+          },
+          {
+            "customerID": "a089ba63-088b-4833-a7cc-c001c8fbc451",
+            "agency": "7999",
+            "account": "73868-7"
+          },
+          {
+            "customerID": "03b5904d-9e7d-451a-b718-10d57b9eda35",
+            "agency": "4381",
+            "account": "01408-0"
+          },
+          {
+            "customerID": "92f466cb-51a5-4ed6-87b7-6c69200a63ac",
+            "agency": "9695",
+            "account": "24295-8"
+          },
+          {
+            "customerID": "9b65f13a-c2bd-4164-9060-a7bcda1a902e",
+            "agency": "1166",
+            "account": "93326-1"
+          },
+          {
+            "customerID": "9a5211d7-56ed-4fd9-92ec-8744b9751a61",
+            "agency": "0745",
+            "account": "14156-8"
+          },
+          {
+            "customerID": "ba07ac64-e95e-4e1e-9f1b-e5e0c62ab321",
+            "agency": "7795",
+            "account": "87427-8"
+          },
+          {
+            "customerID": "fc9ec1aa-a124-402c-af18-4ca81948889a",
+            "agency": "6685",
+            "account": "62481-0"
+          },
+          {
+            "customerID": "b6276598-fd3b-4e02-8f03-1a7bfec52804",
+            "agency": "4595",
+            "account": "22661-5"
+          },
+          {
+            "customerID": "4ab3ae00-2f3e-4f1a-a533-18a4443b643a",
+            "agency": "9502",
+            "account": "24628-1"
+          },
+          {
+            "customerID": "61c0745f-db14-4262-b9fc-2783af82aa61",
+            "agency": "7242",
+            "account": "43474-0"
+          },
+          {
+            "customerID": "33895e1e-0b10-417e-b1a4-d96043763a0c",
+            "agency": "5497",
+            "account": "26939-5"
+          },
+          {
+            "customerID": "8f503bf0-38d0-4c73-8f2e-8a6a807f1c1e",
+            "agency": "0233",
+            "account": "77924-6"
+          },
+          {
+            "customerID": "a9b06c63-b991-485c-893e-fb6381e21ac1",
+            "agency": "0713",
+            "account": "12675-9"
+          },
+          {
+            "customerID": "4617acbc-43bb-4868-a32b-4870d0737809",
+            "agency": "9572",
+            "account": "07977-5"
+          },
+          {
+            "customerID": "7e42f74d-a90b-4298-beb2-4f8ad110e271",
+            "agency": "3621",
+            "account": "07241-2"
+          },
+          {
+            "customerID": "889038bd-4731-4064-94c4-b54b307fad68",
+            "agency": "0176",
+            "account": "62703-0"
+          },
+          {
+            "customerID": "0d59da6a-b982-4f4d-b5d9-b2fcb3f55e4d",
+            "agency": "6261",
+            "account": "13561-0"
+          },
+          {
+            "customerID": "3c7966da-9f71-4b59-a0f3-ce69f7643765",
+            "agency": "4253",
+            "account": "10115-6"
+          },
+          {
+            "customerID": "6e10da84-e4e5-4d8d-8c2e-beaf7650ff26",
+            "agency": "0189",
+            "account": "23004-5"
+          },
+          {
+            "customerID": "53b0bd54-e61a-4529-baf0-d232dc10fb09",
+            "agency": "2482",
+            "account": "25096-2"
+          }
+        ]
+      },
+      {
+        "bank": "DBZ Bank",
+        "customers": [
+          {
+            "customerID": "b38c8b80-eecc-4d24-9092-5786a8d0a93f",
+            "agency": "3838",
+            "account": "21183-9"
+          },
+          {
+            "customerID": "87d8ce22-d8bf-42b1-8d91-2b1a3de8e66d",
+            "agency": "5129",
+            "account": "39493-1"
+          },
+          {
+            "customerID": "3a0acc70-6b66-4aee-8e6d-d4a7bb81a912",
+            "agency": "1072",
+            "account": "64126-2"
+          },
+          {
+            "customerID": "b8644b4c-58b9-493f-b6da-bc83591f5425",
+            "agency": "0343",
+            "account": "67038-5"
+          },
+          {
+            "customerID": "111cce42-9f02-49c0-8213-70e0bcf34d93",
+            "agency": "3357",
+            "account": "68705-5"
+          },
+          {
+            "customerID": "bbb1d3a8-b67b-4796-b858-9fde529b283d",
+            "agency": "4740",
+            "account": "15175-5"
+          },
+          {
+            "customerID": "c8cdcd30-e5f0-4264-9eda-6880d12d63d4",
+            "agency": "3289",
+            "account": "41906-6"
+          },
+          {
+            "customerID": "70547454-9874-4201-b166-06bca5ea3458",
+            "agency": "8429",
+            "account": "55710-7"
+          },
+          {
+            "customerID": "0877f568-a914-411a-8468-f40fd3e12ede",
+            "agency": "4983",
+            "account": "00107-9"
+          }
+        ]
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
