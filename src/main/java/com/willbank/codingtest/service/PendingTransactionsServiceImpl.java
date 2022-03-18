@@ -16,7 +16,6 @@ import java.util.Objects;
 @Service
 public class PendingTransactionsServiceImpl implements PendingTransactionsService {
     private static final Logger logger = LoggerFactory.getLogger(PendingTransactionsServiceImpl.class);
-
     private final RestTemplate restTemplate;
 
     public PendingTransactionsServiceImpl(@Qualifier("pending_transactions_api") RestTemplate restTemplate) {
@@ -24,7 +23,6 @@ public class PendingTransactionsServiceImpl implements PendingTransactionsServic
     }
 
     public List<PendingTransaction> findAllPendingTransactions() {
-
         ResponseEntity<List<PendingTransaction>> pendingTransactionResponse = restTemplate
                 .exchange("/pending-transactions/api/v1",
                         HttpMethod.GET,

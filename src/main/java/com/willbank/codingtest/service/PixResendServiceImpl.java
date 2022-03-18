@@ -2,6 +2,7 @@ package com.willbank.codingtest.service;
 
 import com.willbank.codingtest.model.PendingTransaction;
 import com.willbank.codingtest.model.PixTransactionResponse;
+import com.willbank.codingtest.model.exception.ApiException;
 import com.willbank.codingtest.model.exception.NotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,7 +44,7 @@ public class PixResendServiceImpl implements PixResendService {
         }
 
         LOGGER.error("stage=error method=PixResendServiceImpl.findPendingTransaction customer={}, has no pending transactions", email);
-        throw new NotFoundException("customer has no pending transactions");
+        throw new NotFoundException();
     }
 
     private PixTransactionResponse performPixTransaction(PendingTransaction pendingTransaction) {
@@ -51,11 +52,16 @@ public class PixResendServiceImpl implements PixResendService {
 
         var customerAccount = bankClientsService.findCustomerAccount(pendingTransaction.getCustomerID());
 
+        if (Objects.isNull(customerAccount)) {
+            LOGGER.error("stage=error method=PixResendServiceImpl.verifyCustomerBalance pix transaction failed, failed to find customer account pendingTransaction={}", pendingTransaction);
+            throw new NotFoundException();
+        }
+
         var balanceResponse = balanceService.getCustomerBalance(customerAccount.getAgency(), customerAccount.getAccount());
 
         if (Objects.isNull(balanceResponse)) {
             LOGGER.error("stage=error method=PixResendServiceImpl.performPixTransaction failed to check customer balance");
-            return new PixTransactionResponse().setSuccess(Boolean.FALSE).setReason("failed to check customer balance");
+            throw new ApiException();
         }
 
         if (balanceResponse.getBalance().compareTo(pendingTransaction.getValue()) >= 0) {
@@ -67,6 +73,6 @@ public class PixResendServiceImpl implements PixResendService {
         }
 
         LOGGER.error("stage=error method=PixResendServiceImpl.verifyCustomerBalance pix transaction failed, insufficient balance pendingTransaction={}", pendingTransaction);
-        return new PixTransactionResponse().setSuccess(Boolean.FALSE).setReason("insufficient balance");
+        throw new ApiException();
     }
 }
