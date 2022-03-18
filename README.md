@@ -6,7 +6,6 @@ API responsible for resending a pix transaction
   
 ``` 
 docker compose up
-
 ```
 
 ## Hosts
