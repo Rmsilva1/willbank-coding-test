@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
-import java.util.Objects;
 
 @Service
 public class PendingTransactionsServiceImpl implements PendingTransactionsService {
@@ -29,8 +28,6 @@ public class PendingTransactionsServiceImpl implements PendingTransactionsServic
                         null,
                         new ParameterizedTypeReference<>() {
                         });
-
-        logger.info("found {} pending transactions", Objects.requireNonNull(pendingTransactionResponse.getBody()).size());
 
         if (pendingTransactionResponse.hasBody()) {
             return pendingTransactionResponse.getBody();

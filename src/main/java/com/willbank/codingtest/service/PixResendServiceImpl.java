@@ -48,12 +48,14 @@ public class PixResendServiceImpl implements PixResendService {
     }
 
     private PixTransactionResponse performPixTransaction(PendingTransaction pendingTransaction) {
-        LOGGER.info("stage=init method=PixResendServiceImpl.performPixTransaction pendingTransaction={}", pendingTransaction);
+        LOGGER.info("stage=init method=PixResendServiceImpl.performPixTransaction, customerID={}, value={} key={}",
+                pendingTransaction.getCustomerID(), pendingTransaction.getValue(), pendingTransaction.getKey());
 
         var customerAccount = bankClientsService.findCustomerAccount(pendingTransaction.getCustomerID());
 
         if (Objects.isNull(customerAccount)) {
-            LOGGER.error("stage=error method=PixResendServiceImpl.verifyCustomerBalance pix transaction failed, failed to find customer account pendingTransaction={}", pendingTransaction);
+            LOGGER.error("stage=error method=PixResendServiceImpl.verifyCustomerBalance pix transaction" +
+                    " failed, failed to find customer account pendingTransaction={}", pendingTransaction);
             throw new NotFoundException();
         }
 
@@ -65,14 +67,21 @@ public class PixResendServiceImpl implements PixResendService {
         }
 
         if (balanceResponse.getBalance().compareTo(pendingTransaction.getValue()) >= 0) {
-            return new PixTransactionResponse()
+
+            var response = new PixTransactionResponse()
                     .setCustomerID(pendingTransaction.getCustomerID())
                     .setKey(pendingTransaction.getKey())
                     .setValue(pendingTransaction.getValue())
                     .setOriginEmail(pendingTransaction.getEmail());
+
+            LOGGER.info("stage=info method=PixResendServiceImpl.performPixTransaction sending pix transaction " +
+                    "customerID={}, value={} key={}", response.getCustomerID(), response.getValue(), response.getKey());
+            return response;
         }
 
-        LOGGER.error("stage=error method=PixResendServiceImpl.verifyCustomerBalance pix transaction failed, insufficient balance pendingTransaction={}", pendingTransaction);
+        LOGGER.error("stage=error method=PixResendServiceImpl.verifyCustomerBalance pix transaction failed," +
+                        " customerID={}, value={} key={}", pendingTransaction.getCustomerID(), pendingTransaction.getValue(),
+                pendingTransaction.getKey());
         throw new ApiException();
     }
 }
